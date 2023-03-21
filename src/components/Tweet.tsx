@@ -1,9 +1,14 @@
 import { ArrowsClockwise, ChatCircle, Heart } from 'phosphor-react';
 import './Tweet.css';
 
+interface TweetProps{
+  content:string,
 
 
-export function Tweet() {
+}
+
+
+export function Tweet(props:TweetProps) {
   return (
     <div className="tweet">
     
@@ -15,9 +20,7 @@ export function Tweet() {
           <span>@edurezende10</span>
         </div>
 
-        <p>Your bones don't break, mine do. That's clear. <br /><br />
-          Your cells react to bacteria and viruses differently than mine. <br /><br />
-          You don't get sick, I do. That's also clear.<br /><br />
+        <p>{props.content}<br /><br />
         </p>
 
         <div className="tweet-content-footer">
