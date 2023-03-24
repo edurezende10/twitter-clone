@@ -9,12 +9,8 @@ import { router } from './Routes'
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
   <React.StrictMode>
-    <div className='Layout'>
-      <Sidebar />
-      <div className="content">
+   
       <RouterProvider router={router}/>
-      </div>
-
-    </div>
+     
   </React.StrictMode>,
 )
